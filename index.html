@@ -28,7 +28,7 @@
         <meta itemprop="name" content="Asgar">
         <meta itemprop="description" content="Asgar adalah sebuah platform sosial untuk berbagi konten antar pengguna secara gratis, dengan tanggung jawab masing-masing pengguna">
         <meta itemprop="image" content="http://asgar.id/assets/img/5A815414-F63A-478C-AD2E-088B45448F55.png">
-        <link href="https://asgar.id/" rel="canonical">
+        <link rel="canonical" href="https://asgardotid.github.io/asgar.id/" />
         <link rel="stylesheet" type="text/css" href="assets/css/main.min.css" />    
         <link rel="shortcut icon" href="assets/img/logo.png" />
         <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -41,16 +41,24 @@
           gtag('config', 'UA-132396562-1');
         </script>
         <!-- Hotjar Tracking Code for asgar.id -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1156787,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:1156787,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+        <script>
+          // register ServiceWorker, remember to use absolute path!
+          if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('/assets/js/sw.js', {scope: '/assets/js/'})
+          }
+          
+          // --- Application code here ---
+        </script>
     </head>
 
     <body>
